@@ -4,9 +4,11 @@ services:
 
   sonarqube:
     build: .
-    environment:
-      - WORDPRESS_DEBUG=1
-      - WORDPRESS_DB_NAME=wordpress
-      - WORDPRESS_DB_PASSWORD=secret
     ports:
       - 9000:9000
+    volumes:
+      - data:/opt/sonarqube/data
+      - ./fixtures:/opt/sonarqube/sources
+
+volumes:
+  data:
