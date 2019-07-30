@@ -1,5 +1,7 @@
 # sonarqube
 
+[![](https://images.microbadger.com/badges/image/javanile/sonarqube.svg)](https://hub.docker.com/r/javanile/sonarqube)
+
 ```yaml
 version: '3.1'
 
